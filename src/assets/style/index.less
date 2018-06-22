@@ -1,0 +1,337 @@
+body,html{
+	display: flex;
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none !important;
+  color: #555;
+}
+ul li{
+  list-style: none;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,#app input.el-input__inner::-webkit-input-placeholder{
+  color: #bebebe;
+  font-size: 14px;
+}
+
+input:-moz-placeholder,textarea:-moz-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+input::-moz-placeholder,textarea::-moz-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+textarea{
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+//input的样式
+input{
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  color: #555;
+  border-radius: 3px;
+  padding-left:5px;
+}
+input:focus{
+  border:1px solid #007cb5;
+}
+//搜索按钮的样式
+.search{
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  background: #007cb5;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+//消息圆点的样式
+.hasMsg{
+  width: 8px;
+  height: 8px;
+  background: #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top:7px;
+  left: -15px;
+  top: 3px\0;
+}
+.hasNotive{
+  width: 8px;
+  height: 8px;
+  background: #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  top:10px;
+  top: 5px\0;
+}
+//首页的当前位置的样式
+.title{
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 3px solid #007cb5;
+}
+.title>span:first-child{
+  font-size: 14px;
+  color: #999;
+  float: left;
+}
+.currentTable{
+  color: #555;
+}
+.title>span:last-child{
+  float: right;
+}
+.search{
+  margin-left: 10px;
+}
+.navTitle{
+  height: 46px;
+  font-size: 18px;
+  background: #f4fafa;
+  line-height: 46px;
+  padding-left: 20px;
+}
+//end
+//标题上的操作按钮，发布通知，消息，文章，投诉等
+.announce{
+  margin-left: 30px;
+  width: 96px;
+  height: 32px;
+  background: #007cb5;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+}
+.announce img{
+  margin-right: 5px;
+  vertical-align: middle;
+}
+//end
+//select的样式
+select{
+  color: #555;
+  margin-right: 30px;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+//默认已回复待回复样式
+.navTitle{
+  padding-right: 20px;
+}
+.navTitle>span:first-child{
+  float: left;
+}
+.navTitle>span:last-child{
+  float: right;
+}
+.navTitle>span:last-child span{
+  font-size: 16px;
+  color: #999;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.navTitle>span:last-child span:hover{
+  color: #555;
+}
+.navTitle>span:last-child span.current{
+  color: #555;
+}
+//下拉菜单样式
+.chooseType{
+  width: 104px;
+  background: url(".././images/list.png") no-repeat 88px 14px;
+  color: #555;
+  margin-right: 30px;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+.selectSelf{
+  position: relative;
+}
+.selectSelf input{
+  width: 104px;
+}
+.selectSelf input:focus{
+  border: 1px solid #dcdcdc;
+}
+.selectSelf ul{
+  position: absolute;
+  top: 25px;
+  border: 1px solid #dcdcdc;
+  z-index: 3;
+}
+.selectSelf li{
+  height: 32px;
+  font-size: 14px;
+  color: #555;
+  padding-left: 5px;
+  width: 104px;
+  cursor: pointer;
+  line-height: 32px;
+  background: #fff;
+}
+.selectSelf li:hover{
+  background: #007cb5;
+  color: #fff;
+}
+//info详情页
+.titleInfo{
+  background: #fff;
+  border-bottom: 1px dashed #e5e5e5;
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  color: #999;
+  padding: 0 25px;
+}
+.navTitleInfo{
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+//分页
+.pageInfo{
+  padding: 80px 0 150px;
+  text-align: right;
+}
+.tag{
+  font-size: 14px;
+  color: #fff;
+  background: #07b7d7;
+  border-radius: 18px;
+  width: 88px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin-left: 15px;
+}
+.error{
+  font-size: 14px;
+  color: #ff3c43;
+}
+//弹窗样式
+.el-tree{
+  background-color: #f4fafa !important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #007cb5 !important;
+  border-color: #007cb5 !important;
+}
+.el-tree-node__label {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+#choose .el-form-item__content{
+  left: -120px;
+}
+#choose .el-form-item{
+  float: left;
+}
+#choose .el-transfer .el-transfer-panel{
+  width: 217px;
+  height: 360px;
+}
+#choose .el-transfer .el-transfer-panel__list{
+  height: 350px;
+}
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+  background-color: #91c3da !important;
+  color: #fff;
+}
+.el-dialog__header{
+  background: #007cb5;
+}
+.el-dialog__header .el-dialog__title{
+  color: #fff;
+  font-size: 16px;
+}
+.el-dialog__header .el-dialog__headerbtn .el-dialog__close{
+  color: #fff;
+}
+
+#choose .el-dialog .el-dialog__body{
+  height: 450px;
+  padding: 0;
+}
+.nodata{
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+#login .el-dialog .el-dialog__body{
+  height: auto;
+  padding: 20px;
+}
+.orgoverflow{
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.hd_treetitle{
+  height: 55px;
+  line-height: 55px;
+  font-size: 15px;
+  color: #333;
+  padding-left: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.dis-span {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  width: 48px;
+  height: 16px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #F3756F;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+/* edit div */
+.edit-div-content img {
+  display: block;
+  max-width: 800px;
+}
+.infoContent-div img {
+  display: block;
+  max-width: 980px;
+}
